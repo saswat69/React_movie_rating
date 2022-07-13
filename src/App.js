@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import Moviecard from "./Moviecard";
+import { Row, Col } from 'antd';
+import "./App.css"
+import { useState } from "react";
+import Card from "./Card";
+import {Switch,Link,Route,Router,Routes, BrowserRouter} from "react-router-dom";
+import ReviewForm from "./Reviewform";
+import Comments from "./Comments";
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+        <Route exact path="/" element={<Card/>}/>
+        <Route exact path="/form" element={<ReviewForm />}/>
+        
+    </Routes>
   );
 }
 
