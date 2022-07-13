@@ -1,11 +1,10 @@
-import { EditOutlined, EllipsisOutlined, SettingOutlined } from '@ant-design/icons';
-import { Avatar, Card } from 'antd';
+import { Card } from 'antd';
 import {Typography} from "antd"
 import React from 'react';
 import Click from './Click';
 import { Link } from 'react-router-dom';
 import {Row,Col} from "antd"
-import Commentbutton from './Commentbutton';
+;
 
 const { Meta } = Card;
 

@@ -1,11 +1,8 @@
-import Moviecard from "./Moviecard";
-import { Row, Col } from 'antd';
 import "./App.css"
-import { useState } from "react";
 import Card from "./Card";
-import {Switch,Link,Route,Router,Routes, BrowserRouter} from "react-router-dom";
+import {Route,Routes} from "react-router-dom";
 import ReviewForm from "./Reviewform";
-import Comments from "./Comments";
+
 
 function App() {
 
